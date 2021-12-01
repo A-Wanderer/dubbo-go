@@ -54,8 +54,8 @@ type UserDefineConfigBuilder struct {
 	userDefineConfig *UserDefineConfig
 }
 
-func NewUserDefineConfig() *UserDefineConfig {
-	return &UserDefineConfig{}
+func NewUserDefineConfigBuilder() *UserDefineConfigBuilder {
+	return &UserDefineConfigBuilder{userDefineConfig: &UserDefineConfig{}}
 }
 
 func (udcb *UserDefineConfigBuilder) SetName(name string) *UserDefineConfigBuilder {
