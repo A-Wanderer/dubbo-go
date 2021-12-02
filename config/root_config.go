@@ -321,7 +321,7 @@ func (rb *RootConfigBuilder) SetConfigCenter(configCenterConfig *CenterConfig) *
 	return rb
 }
 
-func (rb *RootConfigBuilder) SetConfigCenter(userDefineConfig *UserDefineConfig) *RootConfigBuilder {
+func (rb *RootConfigBuilder) SetUserDefine(userDefineConfig *UserDefineConfig) *RootConfigBuilder {
 	rb.rootConfig.UserDefine = userDefineConfig
 	return rb
 }

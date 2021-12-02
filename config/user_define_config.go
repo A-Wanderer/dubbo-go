@@ -23,8 +23,8 @@ import (
 )
 
 type UserDefineConfig struct {
-	Name         string                 `yaml:"config-name"`
-	Version      string                 `default:"1.0" yaml:"version"`
+	Name         string                 `default:"user-config" yaml:"name"`
+	Version      string                 `default:"v1.0" yaml:"version"`
 	DefineConfig map[string]interface{} `yaml:"define-config"`
 }
 
