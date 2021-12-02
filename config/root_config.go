@@ -81,7 +81,7 @@ type RootConfig struct {
 	// cache file used to store the current used configurations.
 	CacheFile string `yaml:"cache_file" json:"cache_file,omitempty" property:"cache_file"`
 
-	UserDefine *UserDefineConfig `yaml:"user-define"`
+	UserDefine *UserDefineConfig `yaml:"user-define" json:"user-define,omitempty" property:"user-define"`
 }
 
 func SetRootConfig(r RootConfig) {

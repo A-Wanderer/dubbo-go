@@ -23,9 +23,9 @@ import (
 )
 
 type UserDefineConfig struct {
-	Name         string                 `default:"user-config" yaml:"name"`
-	Version      string                 `default:"v1.0" yaml:"version"`
-	DefineConfig map[string]interface{} `yaml:"define-config"`
+	Name         string                 `default:"user-config" yaml:"name" json:"name,omitempty" property:"name"`
+	Version      string                 `default:"v1.0" yaml:"version" json:"version,omitempty" property:"version"`
+	DefineConfig map[string]interface{} `yaml:"define-config" json:"define-config,omitempty" property:"define-config"`
 }
 
 func (*UserDefineConfig) Prefix() string {
